@@ -1,0 +1,531 @@
+@font-face {
+    font-family: "coco";
+    font-weight: bold;
+    src: url(Cocogoose-Compressed-Bold-trial.ttf);
+}
+
+@font-face {
+    font-family: "cocono";
+    src: url(cocogoose_narrows/Cocogoose-Compressed-Light-trial.ttf);
+}
+
+body{
+    margin: 0;
+}
+
+
+a{
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'coco';
+}
+
+#immagine_omino{
+    height: 9%;
+    width:4%;
+    border-radius:1000%;
+    position:fixed;
+    left:10px;
+    top: 10px;
+    z-index: 1;
+    background-color: #0051A3;
+}
+
+
+#login{
+    height: 30%;
+    width: 70%;
+}
+
+header{
+    background-color: #0051A3;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    padding: 10px 80px 10px 80px;
+}
+
+#logo{
+    height: 81px;
+    width: 146px;
+}
+
+#barra{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+}
+
+#barra a{
+    font-size: 20px;
+}
+
+#concorso{
+    position: relative;
+}
+
+.hidden{
+    display: none;
+}
+
+#vinciconc{
+    display: flex;
+    font-size: 222px;
+    width: 100px;
+    height: 200px;
+    background-color: #FFD700;
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 500px;
+    color: #0051A3;
+}
+
+#icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    
+}
+#icon img{
+    height: 45%;
+    width: 100%;
+}
+.border_icone{
+    background-color:#FFD700 ;
+    border-radius: 65%;
+    height: 40%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border_icone:hover{
+    background-color: white;
+}
+
+#imgicon{
+height: 5px;
+width: 10px;
+}
+
+
+#log{
+    display: none;
+    border-radius: 100%;
+    background-color: #FFD700;
+    height: 30px;
+    width: 35px;
+}
+
+#log div{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 35px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #0051A3;
+}
+
+#menu{
+    display: none;
+    border-radius: 100%;
+    height: 30px;
+    width: 35px;
+    background-color: #FFD700;
+}
+
+#menu div{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 35px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #0051A3;
+}
+
+
+
+@media (max-width:800px){
+    #barra{
+        display: none;
+    }
+    #icon{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #menu{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    #menu:hover{
+        background-color:#ffea95;
+    }
+
+    #log:hover{
+        background-color:#ffea95;
+    }
+   
+    #log{
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+        padding: 10px;
+        align-items: center;
+    }
+
+
+
+}
+
+a{
+    text-transform: uppercase;
+    color: #FFD700;
+    text-decoration: none;
+    font:  sans-serif;
+    font-size: 24px;
+}
+
+#main{
+    width: 100%;
+}
+
+#pubblicita_concorso{
+    background-image: url(	https://www.pavesini.it/wp-content/uploads/2024/02/vincieparti.jpg);
+    height: 573px;
+    background-size: cover;
+    position: relative;
+}
+
+#vinci{
+    position: absolute;
+    left: 250px;
+    bottom: 30px;
+}
+
+#vinci2{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    #pubblicita_concorso{
+        background-image: url(	https://www.pavesini.it/wp-content/uploads/2024/02/vincieparti_mobile.png);
+        height: 713px;
+        background-size: cover;
+        position: relative;
+    }
+
+    #vinci{
+        display: none;
+    }
+
+    #vinci2{
+        display: block;
+        position: absolute;
+        left: 15%;
+         bottom: 30px;
+    }
+}
+
+#scopri{
+    padding: 50px 10px 50px 10px;
+    height: 476px;
+    background-color:  hsl(45, 15%, 95%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'coco';
+}
+
+#scopri h1{
+    font-family: 'coco';
+    color: #0051A3;
+    text-decoration: none;
+    font:  sans-serif;
+    font-size: 36px; 
+}
+
+#pavesino{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+#pavesino img{
+    height: 90%;
+    width: 100%;
+}
+
+
+
+@media (max-width: 500px) {
+    #pavesino{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #scopri{
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+#ricette{
+    padding: 90px 10px ;
+    height: 878px;
+    background-color: #ffea95;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#ricette h1{
+
+    font-family: 'coco';
+    color: #0051A3;;
+    text-decoration: none;
+    font:  sans-serif;
+    font-size: 36px; 
+    text-align: center;
+}
+
+#container{
+display: flex;
+justify-content: center;
+align-items: start;
+text-align: center;
+gap:  20px;
+}
+
+.descrizione{
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    gap: 90px 30px;
+    background-color: #0051A3;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+
+.descrizione img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+
+.descrizione img:hover{
+    transform: scale(1.12);
+}
+
+
+.box{
+    height: 40%;
+}
+
+.descrizione h2{
+    color: #FFD700;
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'cocono';
+}
+
+.descrizione p{
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'cocono';
+
+}
+
+#ric{
+    color: #0051A3;
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+#nuovaricetta{
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+#bonusricetta{
+    width: 40%;
+   
+}
+
+#ric img{
+    width: 40%;
+    height: 35%;
+}
+
+@media (max-width: 500px) {
+    #pavesino{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #scopri{
+        height: 4000px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #ricette{
+        height: 2700px;
+    }
+}
+
+.button{
+    display: inline-block;
+    width: 40%;
+    background-color: #FFD700;
+    color: #0051A3;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+}
+
+.button2{
+    display: inline-block;
+    background-color: #FFD700;
+    color: #0051A3;
+    border-radius: 15px;
+    padding: 10px 10px 1px 10px;
+    text-align: center;
+}
+
+.descrizione span{
+    padding: 20px 0 10px;
+}
+
+
+footer{
+    padding: 20px;
+    height: 377px;
+    background-color: #FFD700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img{
+    height: 121px;
+    width: 230px;
+    padding: 40px;
+}
+
+footer a{
+padding-top: 20px;
+padding-bottom: 10px;
+color: #0051A3;
+font-size: 20px;
+margin: 10px;
+text-transform: none;
+}
+
+footer p{
+padding-top: 10px;
+color: #0051A3;
+font-size: 16px;
+margin: 10px;
+text-transform: none;
+}
+
+#allinea{
+    display: flex;
+    text-align: center;
+}
+.r{
+    color: #0051A3;
+    font-family: coco;
+}
+.sottolinea{
+    text-decoration: underline;
+    color: #0051A3;
+   font-weight: normal;
+   font-family: cocono;
+   
+}
+
+#no_grassetto{
+    font-weight: normal;
+}
+#barilla{
+    color: #5D5D5D;
+    font-size: 16px;
+    margin: 10px;
+    text-transform: none;
+
+}
+
+#icone{
+    height: 98px;
+    background-color: #0051A3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 40%;
+    padding-right: 40%;
+    text-align: center;
+}
+
+.border_icon{
+    background-color: white;
+    border-radius: 60%;
+    height: 50%;
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.border_icon:hover{
+    background-color: #FFD700;
+}
+
+.border_icon img{
+    height: 100%;
+    width: 100%;
+}
+
